@@ -1,0 +1,483 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+<script src="js/jquery-1.11.2.min.js" type="text/javascript"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Archivo+Black|Julius+Sans+One|Open+Sans:600|Roboto|Covered+By+Your+Grace|Source+Sans+Pro:700" rel="stylesheet">
+<meta charset="utf-8">
+<title>Johnatan Rhys Meyers tribute page</title>
+
+<style>
+
+a {
+	color: white;
+	}
+a:hover { 
+    color: rgba(113,113,113,1.00);
+	text-shadow: 3px 3px 3px rgba(0,0,0,1.00);
+	 text-decoration: none;
+}
+.intro {
+	background-color: white;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	-moz-background-clip: padding; 
+	-webkit-background-clip: padding-box; background-clip: padding-box;
+}
+.intro-text {
+	padding-top: 150px;
+	padding-left: 40px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 30px;
+	text-align: left;
+}
+h1 {
+	font-size: 45px;
+	text-align: left;
+}
+.intro-photo-div{
+	align: right;
+	text-align: right;
+	}
+.intro-pic {
+	height: auto;
+	width: 100%;
+	-webkit-mask-image:-webkit-gradient(linear, left top, left bottom,from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+	float: right;
+	margin-right: 0px;
+	padding-right: 0px;
+    }
+
+
+}
+.big-text {
+	font-family: 'Julius Sans One', sans-serif;
+	font-size: 60px;
+	text-align: left;
+}
+.words-3-container {
+	/*margin-top: 15px;
+	margin-bottom: 15px;*/
+	width: 100%;
+    padding-top: 5%; 
+	padding-bottom: 5%;
+	margin: auto;
+	background-color: #1a1a1a;
+    color: white;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 60px;
+	text-align: center;
+	letter-spacing: 3px;
+	
+}
+#grad {    
+	background: #1a1a1a; /* For browsers that do not support gradients */
+    background: -webkit-radial-gradient(circle, #6c6c6c, #1a1a1a); /* For Safari 5.1 to 6.0 */
+    background: -o-radial-gradient(circle, #6c6c6c, white, #1a1a1a); /* For Opera 11.1 to 12.0 */
+    background: -moz-radial-gradient(circle, #6c6c6c, #1a1a1a); /* For Firefox 3.6 to 15 */
+    background: radial-gradient(circle, #6C6C6C, #1a1a1a); /* Standard syntax */
+}
+
+p.bio {
+	text-align: justify;
+	font-size: 17px;
+	font-family: 'Open Sans', sans-serif;
+	letter-spacing: 1px;
+	line-height: 150%;
+}
+.first-letter{
+	font-family: 'Roboto', sans-serif;
+	font-size: 60px;
+	line-height: 50px;
+    padding-top: 4px;
+    padding-right: 8px;
+    padding-left: 3px;
+	float: left;
+	text-shadow: 2px 2px 2px #8C8C8C;
+	}
+.bio-container {
+	padding-top: 30px;
+	padding-bottom: 2%;
+	height: 100%;
+	background-image: -webkit-gradient(linear, right top, left bottom,from(rgba(0,0,0,0)), to(rgba(0,0,0,1))), url('https://www.louisdallaraphotography.com/wp-content/uploads/2012/01/foggy-trees-.jpg');
+	background-blend-mode:lighten;
+    background-repeat: x;
+    background-attachment: fixed;
+	}	
+#bio-title {
+	text-align: center;
+	font-size: 50px;
+	font-family: 'Julius Sans One', sans-serif;
+	padding-bottom: 20px;
+	letter-spacing: 3px;
+	
+	}
+.bio-pic {
+	height: auto;
+	width: 100%;
+	-webkit-mask-image:-webkit-gradient(linear, right top, left bottom,from(rgba(0,0,0,1)), to(rgba(0,0,0,1)));
+	float: right;
+	margin-right: -15px;
+	margin-left: -15px;
+	padding-right: 0px;
+    }
+.filmography {
+	color: white;
+	text-shadow: 2px 2px 2px #000000;
+	width: 500px;
+    margin:0 auto;
+    text-align:left;
+	font-size: 30px;
+	font-family: 'Open Sans', sans-serif;
+	letter-spacing: 1px;
+	line-height: 150%;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	
+	
+	
+}
+.filmographyallcont {
+	background-image: -webkit-gradient(linear, right top, left bottom,from(rgba(0,0,0,0)), to(rgba(0,0,0,1))), url('https://i.ytimg.com/vi/2NuiHu4x8ug/maxresdefault.jpg');
+	background-blend-mode:lighten;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.discography { /*songs in discography*/
+background-image: -webkit-gradient(linear, right top, left bottom,from(rgba(0,0,0,0)), to(rgba(0,0,0,1))), url('http://orig07.deviantart.net/96d8/f/2012/360/b/c/foggy_christmas_morning_by_blakevernon-d5p8u9i.jpg');
+	background-blend-mode:lighten;
+    background-repeat: x;
+    background-attachment: fixed;
+}
+
+
+.disc-cont{ /** container for whole discography section*/
+    background-color: rgba(255,255,255,0.65);
+	margin: 30px 30px 30px 30px;
+	text-align: center;
+	font-size: 30px;
+	font-family: 'Open Sans', sans-serif;
+	letter-spacing: 1px;
+	line-height: 150%;
+	width: 40%;
+	
+}
+.disc-pic{
+	display: block;
+	margin: auto;
+	width: 80%;
+	height: auto;
+	box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+/*hover overlay for disc pics*/
+.contain {
+  padding-top: 30px;
+  margin: auto;
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  
+  position: absolute;
+  margin: auto;
+  top: 30px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 92%;
+  width: 80%;
+  opacity: 0;
+  transition: 1s ease;
+  background-color: #000000;
+  border-radius: 20px;
+  
+  
+}
+
+.contain:hover .overlay {
+  opacity: 0.8;
+}
+
+.text {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 1px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+/*end of hover overlay*/
+
+/*carousel modelling*/
+.the-quote {
+	text-align:center;
+	margin-bottom: 15px;
+}
+blockquote {
+padding-top: 15px;
+display:inline-block;
+width: 50%;
+font-size: 22px;
+font-family: 'Covered By Your Grace', cursive;
+letter-spacing: 1px;
+}
+
+	
+.the-model-bg { /*modelling section background*/
+	background-image: -webkit-gradient(linear, right top, left bottom,from(rgba(0,0,0,0)), to(rgba(0,0,0,1))), url('https://www.louisdallaraphotography.com/wp-content/uploads/2012/01/foggy-trees-.jpg');
+	background-blend-mode:lighten;
+    background-repeat: x;
+    background-attachment: fixed;
+	} 
+@media only screen and (max-device-width: 1100px) { 
+.carousel-pic {
+	height: 90% !important;
+	width: 90% !important;
+	padding: 5% 5% 5% 5%;
+	box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+	margin: auto;
+	max-width: 300px;	
+}
+}
+.slide-line { /*carousel row */
+    max-height: 450px;
+	width: auto;
+	justify-content: space-between;
+	display: flex;
+	margin: auto;
+	padding-bottom: 20px;
+}
+.the-slide { /*individual slides*/
+	text-align: center;
+	padding-top: 5%;
+	height: 400px;
+	}
+	
+
+
+.carousel-pic {
+	height: 330px;
+	width: auto;
+	box-shadow: 5px 5px 5px 5px #303030;
+	position: relative;
+	padding: 15px 15px 50px 15px;
+	box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+	margin: auto;
+	max-width: 300px;
+	
+}
+.carousel-caption {
+	color: black;
+	font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1px;
+}
+
+.the-footer{
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: #1a1a1a;
+    color: white;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	text-align: center;
+	letter-spacing: 1px;
+ }
+</style>
+</head>
+
+<body>
+<div class="container-fluid">
+
+                         <!--intro container-->
+  <div class="row intro">
+    <div class="intro-text col-md-4">
+     <h1>Jonathan<br><span class="big-text">Rhys Myers</span></h1>
+     <p>a tribute page</p>
+     </div>
+    <div class="intro-photo-div col-md-8">
+    <img class="intro-pic" src="https://pmcvariety.files.wordpress.com/2015/02/jonathan-rhys-myers.jpg?w=670&h=377&crop=1" alt="johnatan rhys myers">
+    <br style="clear:both" />
+   </div>  
+  </div> 
+         <br>             <!--3 words container--> 
+ <div class="row ">        
+<div class="words-3-container container" id="grad">
+   <div class="col-md-4 fieldstext">
+     <p><a href="#film" target="_blank">actor.</a></p>
+    </div>
+   <div class="col-md-4 fieldstext">
+     <p><a href="#disc" target="_blank">singer.</a></p>
+    </div>
+   <div class="col-md-4 fieldstext">
+     <p><a href="#model" target="_blank">model.</a></p>
+    </div>
+</div>
+</div>
+                        <!--biography section-->
+<div class="row">                     
+  <div class="bio-container col-md-8">
+   <h1 id="bio-title">biography</h1>
+   <p class="bio"><span class="first-letter">J</span>onathan Rhys Meyers (born Jonathan Michael Francis O'Keeffe; 27 July 1977) is an Irish actor. He is best known for his roles in the films Velvet Goldmine (1998), Bend It Like Beckham (2002), Match Point (2005), Mission Impossible III (2006) and his television roles as Elvis Presley in the biographical miniseries Elvis (2005), which earned him a Golden Globe Award for Best Actor – Miniseries or Television Film, and as King Henry VIII in the historical drama The Tudors (2007–10).[2][3] He has been the face model for several Hugo Boss fragrances advertising campaigns.[4]
+In 2013, Meyers appeared as the villain Valentine Morgenstern in The Mortal Instruments: City of Bones, based on Cassandra Clare's novel, City of Bones. He also starred in the NBC drama series Dracula (2013–14) as the title character. Meyers appeared in the 2015 film Stonewall, directed by Roland Emmerich.
+  </p>
+  </div>
+  <div class="col-md-4 intro-photo-div">
+  <img class="bio-pic img-responsive" src="http://i2.listal.com/image/486580/600full-jonathan-rhys-meyers.jpg"  alt="jrm"/>
+  </div>
+ </div>
+               <!--filmography section-->
+ <div class="row">
+  <h1 class="words-3-container" id="film">filmography</h1>
+ </div>
+ <div class="filmographyallcont row"> <!--container for the background-->
+  <div class="filmography">   
+    <ul>
+        <li><strong>1994</strong> A Man of No Importance</li>
+        <li><strong>1998</strong> Velvet Goldmine</li>
+        <li><strong>2002</strong> Bend It Like Beckham</li>
+        <li><strong>2004</strong> Vanity Fair</li>
+        <li><strong>2007</strong> August Rush</li>
+        <li><strong>2008</strong> The Children of Huang Shi</li>
+        <li><strong>2008</strong> A Film with Me in It</li>
+        <li><strong>2010</strong> Shelter</li>
+        <li><strong>2015</strong> Damascus Cover</li>
+        <li><strong>2016</strong> The Rising</li>
+        <li><strong>2016</strong> London Town</li>
+        <li><strong>2007–2010</strong> The Tudors (TV series)</li>
+        <li><strong>2017</strong> Vikings (TV series)</li>
+        
+        
+    </ul>
+  </div>
+  </div>
+                 <!--discography -->
+<div class="row">
+  <h1 class="words-3-container" id="disc">discography</h1>
+ </div>
+ 
+ <!--container start-->
+ <div class="row discography">
+   <div class="disc-cont col-md-6">
+   <div class="contain">
+      <p><img src="http://cdn-s3.allmusic.com/release-covers/500/0000/729/0000729849.jpg" class=" disc-pic" alt="August Rush Soundtrack"/></p>
+        <div class="overlay">
+           <div class="text">August Rush Soundtrack</div>
+            </div>
+      </div>
+      <p><strong>Songs:</strong></p>
+        <p> Break</p>
+        <p>Moondance</p>
+        <p>Something Inside</p>
+        <p>This Time</p> 
+   </div>
+ 
+    <div class="disc-cont col-md-6" style="padding-bottom: 10%;">
+    <div class="contain">
+     <p><img src="http://cps-static.rovicorp.com/3/JPG_500/MI0000/165/MI0000165303.jpg?partner=allrovi.com" class=" disc-pic" alt="Velvet Goldmine Soundtrack"/></p>
+        <div class="overlay">
+           <div class="text">Velvet Goldmine Soundtrack</div>
+            </div>
+    </div>
+    <p><strong>Songs:</strong></p>
+       <p> Baby's on Fire</p>
+        <p>Tumbling Down</p>  
+    </div>
+    
+ 
+ </div>  <!--discography container end-->      
+        
+                    <!-- modeling gallery-->
+<div class="row">
+  <h1 class="words-3-container" id="model">modelling </h1>
+</div>
+            <!---carousel modelling-->
+<div class="row the-model-bg">
+  <div class="the-quote">
+ <blockquote>"Modelling I actually find more difficult than acting. You really have to have an amazing ego to be able to stand there and pose for 10 hours. I think someday I'm going to get older and, you know, I look very good in photographs - so I might as well do it." (J.R.Meyers, 2006)</blockquote>
+  </div>
+<div id="carousel-example-generic" class="carousel slide-line">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+  
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+       <!-- Slide 1 -->
+    <div class="item active">
+        <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-6 the-slide">
+               <img class="carousel-pic"  src="http://static.tvtropes.org/pmwiki/pub/images/Jonathan_Rhys_Meyers_3318.jpg" alt="Jonathan Rhys Meyers"/>
+               <div class="carousel-caption">Jonathan Rhys Meyers</div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6 the-slide">
+                <img class="carousel-pic" src="http://www.fashionadexplorer.com/l-qpQBvcEKzmCwz5Ai.jpg" alt="Modelling for Versace">
+                <div class="carousel-caption">Modelling for Versace</div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6 the-slide">
+                <img class="carousel-pic" src="http://3.bp.blogspot.com/-gLprb6nV9Qo/UYnji7rlDMI/AAAAAAAAFf0/7YNP_GXpALk/s1600/jonathan_rhys_meyers_04.jpg" alt="Irish actor and model"/>
+                <div class="carousel-caption">Irish actor and model</div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6 the-slide">
+                <img class="carousel-pic" src="https://styleisle.files.wordpress.com/2010/10/outerfrontcover_it_m4251b01.jpg" alt="Magazine cover"/>
+                <div class="carousel-caption">Magazine cover</div>
+            </div>
+            </div>
+        </div>
+   
+       <!-- Slide 2 -->
+    <div class="item">
+            <div class="col-md-3 col-sm-6 col-xs-6 the-slide">
+                <img class="carousel-pic" src="http://2.bp.blogspot.com/_7rkgfVTZEic/SCpwmMidI1I/AAAAAAAAAqM/k_BKsNAmWQw/s400/jr1.jpg" alt="Versace eyewear"/>
+                <div class="carousel-caption">Versace eyewear</div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6 the-slide">
+                <img class="carousel-pic" src=" http://i.dailymail.co.uk/i/pix/2015/05/20/23/063D70BE0000044D-0-image-a-5_1432159264612.jpg" alt="The Tudors promo"/>
+                <div class="carousel-caption">The Tudors promo</div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6 the-slide">
+                <img class="carousel-pic" src="https://kugilakopi.files.wordpress.com/2009/04/jonathan3.jpg" alt="JRM for Energie"/>
+                <div class="carousel-caption">JRM for Energie</div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6 the-slide">
+               <img class="carousel-pic" src="http://static.tvtropes.org/pmwiki/pub/images/Jonathan_Rhys_Meyers_3318.jpg" alt="Jonathan Rhys Meyers"/>
+               <div class="carousel-caption">Jonathan Rhys Meyers</div>                
+            </div>
+       
+     </div> 
+    </div>
+
+ <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+    <span class="icon-prev"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+    <span class="icon-next"></span>
+  </a></div>
+</div>
+<div class="row">
+<div class="the-footer">
+  <div class="col-md-6"> Read more on <a href="https://en.wikipedia.org/wiki/Jonathan_Rhys_Meyers" target="_blank"> Wikipedia</a> </div>
+<div class="col-md-6"> page coded by <a href="#" target="_blank"> brankaandreja</a> </div>
+</div>
+</div>
+<!---->
+</div><!-- whole doc div-->
+</body>
+</html>
